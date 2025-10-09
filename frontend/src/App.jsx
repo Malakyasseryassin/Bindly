@@ -4,6 +4,8 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import AdminUsers from './pages/AdminUsers';
 import AdminVendors from './pages/AdminVendors';
 import AdminEvents from './pages/AdminEvents';
+import AdminBazaars from './pages/AdminBazaars';
+import AdminTrips from './pages/AdminTrips';
 import AdminManagement from './pages/AdminManagement';
 import AdminProfile from './pages/AdminProfile';
 import Login from './pages/Login';
@@ -130,6 +132,26 @@ function App() {
                 <ProtectedRoute>
                   <AdminOnly>
                     <AdminEvents />
+                  </AdminOnly>
+                </ProtectedRoute>
+              }
+            />
+            <Route 
+              path="/admin/bazaars" 
+              element={
+                <ProtectedRoute>
+                  <AdminOnly>
+                    <AdminBazaars />
+                  </AdminOnly>
+                </ProtectedRoute>
+              }
+            />
+            <Route 
+              path="/admin/trips" 
+              element={
+                <ProtectedRoute>
+                  <AdminOnly>
+                    <AdminTrips />
                   </AdminOnly>
                 </ProtectedRoute>
               }

@@ -226,6 +226,22 @@ const Navbar = () => {
                     Manage Events
                   </Link>
                   <Link
+                    to="/admin/bazaars"
+                    className="btn btn-outline"
+                    style={{ width: '100%' }}
+                    onClick={closeSidebar}
+                  >
+                    Manage Bazaars
+                  </Link>
+                  <Link
+                    to="/admin/trips"
+                    className="btn btn-outline"
+                    style={{ width: '100%' }}
+                    onClick={closeSidebar}
+                  >
+                    Manage Trips
+                  </Link>
+                  <Link
                     to="/admin/manage"
                     className="btn btn-outline"
                     style={{ width: '100%' }}
